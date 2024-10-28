@@ -1,0 +1,33 @@
+.component-chip {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: var(--background-ui_bg_elevated, rgba(255, 255, 255, 0.08));
+  cursor: pointer;
+}
+
+.component-chip:hover {
+  background: var(--etc-ui-action-hover-fff-5, rgba(255, 255, 255, 0.05));
+}
+
+.component-chip-selected {
+  border: 1px solid var(--interaction-ui_interaction_primary, #125aed);
+  background: var(
+    --interaction-ui_interation_primary_selected,
+    rgba(83, 139, 255, 0.2)
+  );
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.15) inset;
+}
+
+.component-chip-tag {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.component-chip-tag:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}

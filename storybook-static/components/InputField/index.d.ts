@@ -1,0 +1,36 @@
+import { ChangeEvent, FunctionComponent, FormEvent } from '../../../node_modules/react';
+export interface Props {
+    type?: 'default' | 'searchFilter';
+    inputType?: 'email' | 'text' | 'password' | 'number' | 'uid' | 'box' | 'custom-time';
+    inputText?: string;
+    category?: string[];
+    selectCategory?: (index: number) => void;
+    error?: boolean;
+    errorText?: string;
+    valid?: boolean;
+    disabled?: boolean;
+    leftDecoration?: string;
+    leftTextDecoration?: string;
+    rightDecoration?: string;
+    secondRightDecoration?: string;
+    verifyText?: string;
+    placeholder?: string | number | null;
+    defaultValue?: any;
+    autoFocus?: boolean;
+    min?: number;
+    max?: number;
+    maxLength?: number;
+    children?: any;
+    style?: any;
+    inputStyle?: any;
+    rightStyle?: any;
+    secondRightStyle?: any;
+    placeholderStyle?: any;
+    onChange?: (e: ChangeEvent<HTMLInputElement>, categoryIndex?: number) => void;
+    onPressEnter?: (value: string) => void;
+    onInvalid?: (e: FormEvent<HTMLInputElement>) => void;
+    rightDecorationTapped?: (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => void;
+    secondRightDecorationTapped?: (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => void;
+}
+declare const InputField: FunctionComponent<Props>;
+export default InputField;

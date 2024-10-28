@@ -1,0 +1,36 @@
+.component-radio-button-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: start;
+  align-items: start;
+}
+
+.component-radio-button {
+  display: flex;
+  cursor: pointer;
+  justify-content: start;
+}
+
+.component-radio-button-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 8px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid var(--status-etc-darkgray);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.component-radio-button-circle-selected {
+  width: 8px;
+  height: 8px;
+
+  background-color: var(--interation-ui-interation-primary);
+  border-radius: 50%;
+}

@@ -1,0 +1,102 @@
+{
+  "name": "skuber-component-storybook",
+  "version": "0.0.8",
+  "description": "Reusable components for Skuber Projects",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "src/styles",
+    "src/components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wondermove-Inc/skuber-component-storybook.git"
+  },
+  "author": "wondermove",
+  "license": "ISC",
+  "private": false,
+  "type": "module",
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@storybook/react-webpack5": "^8.3.6",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^16.18.108",
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-lottie": "^1.2.4",
+    "react-spinners": "^0.14.1",
+    "recharts": "^2.12.7",
+    "typescript": "^4.9.5",
+    "vite-tsconfig-paths": "^4.0.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_446d9e1601fa409"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:storybook/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^2.0.2",
+    "@storybook/addon-essentials": "^8.3.4",
+    "@storybook/addon-interactions": "^8.3.4",
+    "@storybook/addon-links": "^8.3.4",
+    "@storybook/addon-onboarding": "^8.3.4",
+    "@storybook/blocks": "^8.3.4",
+    "@storybook/builder-vite": "^8.3.5",
+    "@storybook/preview-api": "^8.3.4",
+    "@storybook/react": "^8.3.4",
+    "@storybook/react-vite": "^8.3.4",
+    "@storybook/test": "^8.3.4",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@types/jest": "^29.5.13",
+    "@types/mocha": "^10.0.8",
+    "@types/react-lottie": "^1.2.10",
+    "@vitejs/plugin-react": "^4.3.1",
+    "chromatic": "^11.11.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-plugin-css-modules": "^2.12.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-storybook": "^0.9.0",
+    "glob": "^7.2.3",
+    "prettier": "^3.3.3",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.3.4",
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard": "^36.0.1",
+    "vite": "^4.5.5",
+    "vite-plugin-dts": "^4.2.4",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vite-plugin-svgr": "^4.2.0"
+  }
+}

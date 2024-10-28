@@ -1,0 +1,35 @@
+.component-toggle-container {
+  position: relative;
+
+  width: 32px;
+  height: 16px;
+
+  border-radius: 7px;
+
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.component-toggle-container-off {
+  background-color: var(--text-ui-text-disabled);
+}
+.component-toggle-container-on {
+  background-color: var(--interation-ui-interation-primary);
+}
+
+.component-toggle-toggle {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  transition: transform 0.1s linear;
+}
+.component-toggle-toggle-on {
+  background-color: white;
+
+  transform: translateX(16px);
+}
+.component-toggle-toggle-off {
+  background-color: var(--text-tertiary);
+}

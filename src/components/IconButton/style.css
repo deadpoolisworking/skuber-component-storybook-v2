@@ -1,0 +1,21 @@
+.component-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: transparent;
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.component-icon-button:hover {
+  background-color: var(--etc-ui-action-hoverfff5);
+}

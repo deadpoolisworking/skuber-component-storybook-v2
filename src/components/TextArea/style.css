@@ -1,0 +1,101 @@
+.component-textarea {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid rgba(238, 238, 238, 0.1);
+  border-radius: 8px;
+}
+
+.component-textarea-label-focused,
+.component-textarea-label-left-deco-focused,
+.component-textarea-label-unfocused,
+.component-textarea-label-left-deco-unfocused {
+  position: absolute;
+
+}
+
+.component-textarea-label-focused {
+  left: 12px;
+  top: -8px;
+  /* transform: translate(0, -15px); */
+
+  /* background-color: var(--background-ui-bg-secondary); */
+
+  transition: left 0.15s linear, top 0.15s linear, transform 0.15s linear;
+}
+
+.component-textarea-label-unfocused {
+  left: 12px;
+  top: 12px;
+  /* transform: translate(0, -15px); */
+
+  background-color: transparent;
+
+  transition: left 0.15s linear, top 0.15s linear, transform 0.15s linear;
+}
+
+.component-textarea-label-left-deco-focused {
+  left: 12px;
+  top: -8px;
+  /* transform: translate(0, -15px); */
+
+  /* background-color: var(--background-ui-bg-secondary); */
+
+  transition: left 0.15s linear, top 0.15s linear, transform 0.15s linear;
+}
+
+.component-textarea-label-left-deco-unfocused {
+  left: 32px;
+  top: 12px;
+  /* transform: translate(0, -15px); */
+
+  background-color: transparent;
+
+  transition: left 0.15s linear, top 0.15s linear, transform 0.15s linear;
+}
+
+.component-textarea-input {
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Pretendard Variable';
+  resize: none;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  vertical-align: text-top;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+
+  color: var(--text-ui-text);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  background: red;
+  color: red;
+  background-color: red;
+  background-color: #fff;
+}
+
+.component-textarea:hover {
+  border: 1px solid var(--text-ui-text-secondary);
+}
+
+.component-textarea:has(.component-textarea-input:focus) {
+  border: 1px solid var(--interation-ui-interation-primary-contrast);
+}
+
+.component-textarea:invalid {
+  border: 1px solid red;
+}
+
+.component-textarea:has(.component-textarea-input:disabled) {
+  background-color: var(--background-ui-bg-elevated);
+  border: 1px solid var(--border-ui-border);
+}

@@ -1,0 +1,13 @@
+import { StoryObj } from '@storybook/react';
+import { Props } from './index';
+declare const _default: import("@storybook/csf").ComponentAnnotations<import("@storybook/react/dist/types-a5624094").R, Props>;
+export default _default;
+type Story = StoryObj<Props>;
+export declare const Default: Story;
+export declare const hasLeftIcon: Story;
+export declare const hasRightIcon: Story;
+export declare const hasBothIcons: Story;
+export declare const Error: Story;
+export declare const InputNumber: Story;
+export declare const Disabled: Story;
+export declare const SearchFilter: Story;

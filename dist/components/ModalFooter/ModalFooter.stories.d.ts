@@ -1,0 +1,10 @@
+import { Meta, StoryObj } from '@storybook/react';
+import ModalFooter from '.';
+import './style.css';
+declare const meta: Meta<typeof ModalFooter>;
+export default meta;
+type Story = StoryObj<typeof ModalFooter>;
+export declare const Default: Story;
+export declare const Disabled: Story;
+export declare const Loading: Story;
+export declare const CheckOption: Story;

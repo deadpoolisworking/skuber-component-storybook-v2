@@ -1,0 +1,36 @@
+.component-checkbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  margin: 5px;
+}
+
+.component-checkbox-rect,
+.component-checkbox-rect-checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 16px;
+
+  /* margin-right: 8px; */
+
+  border: 1px solid var(--border-ui-border-elevated);
+  border-radius: 2px;
+  background-color: transparent;
+
+  box-sizing: border-box;
+}
+
+.component-checkbox-rect-checked {
+  border: 1px solid var(--border-ui-border-elevated);
+  border-radius: 2px;
+  /* background-color: var(--interation-ui-interation-primary); */
+}
+
+.component-checkbox-label {
+  margin-left: 90px;
+  margin-right: 6px;
+}

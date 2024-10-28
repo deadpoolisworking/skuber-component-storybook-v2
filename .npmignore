@@ -1,0 +1,25 @@
+node_modules
+.bundle
+build
+dist
+
+.gitattributes
+.gitlab-ci
+.buckconfig
+.flowconfig
+.ruby-version
+
+.eslintrc.js
+.prettierrc.js
+babel.config.js
+metro.config.js
+yarn.lock
+app.json
+App.js
+
+# 배포에 불필요한 설정 파일들 제외
+tsconfig.node.json       
+vite.config.ts
+
+# src는 배포에서 제외되면 안 됩니다!
+# /src 를 제외하지 마세요

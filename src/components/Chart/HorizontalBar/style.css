@@ -1,0 +1,15 @@
+.horizontal-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.horizontal-bar-progress {
+  display: flex;
+  width: 100%;
+  height: 16px;
+  background-color: var(--border-ui-border);
+  border-radius: 4px;
+  margin-right: 12px;
+  min-width: 240px;
+}

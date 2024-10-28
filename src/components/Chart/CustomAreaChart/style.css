@@ -1,0 +1,43 @@
+.custom-area-chart-container {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.custom-area-chart-title-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  gap: 24px;
+}
+.custom-area-chart-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.custom-area-chart-title-line {
+  width: 8px;
+  height: 0px;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+  margin-right: 4px;
+}
+.custom-area-chart-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  padding-top: 4px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.custom-area-chart-subtitle {
+  display: flex;
+  position: absolute;
+  margin-top: 60px;
+  margin-right: 100px;
+  /* top:  */
+  /* background-color: red; */
+}

@@ -1,0 +1,235 @@
+.component-inputfield {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(238, 238, 238, 0.1);
+  border-radius: 8px;
+  background-color: inherit;
+}
+
+.component-inputfield-label-focused,
+.component-inputfield-label-left-deco-focused,
+.component-inputfield-label-unfocused,
+.component-inputfield-label-left-deco-unfocused {
+  position: absolute;
+  z-index: 1;
+  padding: 0 5px;
+  background-color: inherit;
+}
+
+.component-inputfield-label-focused {
+  left: 12px;
+  top: -4px;
+  transition:
+    left 0.15s linear,
+    top 0.15s linear,
+    transform 0.15s linear;
+  background-color: inherit;
+}
+
+.component-inputfield-label-unfocused {
+  left: 12px;
+  top: 12px;
+  transition:
+    left 0.15s linear,
+    top 0.15s linear,
+    transform 0.15s linear;
+}
+
+.component-inputfield-label-left-deco-focused {
+  left: 12px;
+  top: -5px;
+  transition:
+    left 0.15s linear,
+    top 0.15s linear,
+    transform 0.15s linear;
+  background-color: inherit;
+}
+
+.component-inputfield-label-left-deco-unfocused {
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: inherit;
+  transition:
+    left 0.15s linear,
+    top 0.15s linear,
+    transform 0.15s linear;
+}
+
+.component-inputfield-input {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  vertical-align: text-top;
+  appearance: none;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  color: var(--text-ui-text);
+  z-index: 2; /* input이 label 아래에 위치하게 */
+}
+
+.component-inputfield-input:disabled {
+  background-color: transparent;
+}
+
+.component-inputfield:hover {
+  border: 1px solid var(--text-ui-text-secondary);
+}
+
+.component-inputfield:has(.component-inputfield-input:focus) {
+  border: 1px solid var(--interation-ui-interation-primary-contrast);
+}
+
+.component-inputfield:has(.component-inputfield-input:disabled) {
+  background-color: var(--background-ui-bg-elevated);
+  border: 1px solid var(--border-ui-border);
+}
+
+.number-spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2px;
+}
+
+.increment,
+.decrement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 10px;
+
+  background-color: var(--background-ui_bg_elevated, rgba(255, 255, 255, 0.08));
+  border: none;
+
+  cursor: pointer;
+}
+
+/* .custom-number-input input[type='number'] {
+  appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* 
+input[type=number] {
+  width: 100%;
+  height: 40%;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+input[type=number]::-webkit-outer-spin-button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type=number]::-webkit-inner-spin-button::before {
+  content: '▲';
+  background-color: red;
+  color: black;
+  font-size: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button::after {
+  content: '▼';
+  background-color: blue;
+  color: black;
+  font-size: 10px;
+
+  margin-top: 10px;
+} */
+
+.component-input-category {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 17px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  cursor: pointer;
+}
+
+.component-input-category-divider {
+  background-color: rgba(238, 238, 238, 0.1);
+  width: 1px;
+  margin-right: 8px;
+  height: 20px;
+}
+
+.component-input-category:hover {
+  background: var(--etc-ui-action-hover-fff-5, rgba(255, 255, 255, 0.05));
+}
+
+.component-input-category-wrapper {
+  display: flex;
+  position: absolute;
+  top: 44px;
+  user-select: none;
+  width: 90%;
+  z-index: 10;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid var(--border-ui_border_modal, rgba(255, 255, 255, 0.2));
+  background: var(--etc-ui-action-hover-fff-5, rgba(255, 255, 255, 0.05));
+  box-shadow: 5px 5px 20px 0px rgba(20, 25, 35, 0.3);
+  backdrop-filter: blur(25px);
+}
+
+.component-input-category-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  min-height: 36px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+}
+
+.component-input-category-item:hover {
+  background: var(--etc-ui-action-hover-fff-5, rgba(255, 255, 255, 0.05));
+}
